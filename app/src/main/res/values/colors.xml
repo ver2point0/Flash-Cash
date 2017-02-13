@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- board -->
+    <color name="colorBoardBackground">#BDBDBD</color>
+    <color name="colorButtonText">#000000</color>
+
+    <!-- blue team -->
+    <color name="colorBlueLabel">#2196F3</color>
+    <color name="colorBlueScore">#1976D2</color>
+    <color name="colorBlueButton">#BBDEFB</color>
+
+    <!-- red team -->
+    <color name="colorRedLabel">#F44336</color>
+    <color name="colorRedScore">#D32F2F</color>
+    <color name="colorRedButton">#FFCDD2</color>
+
+    <!-- green team -->
+    <color name="colorGreenLabel">#4CAF50</color>
+    <color name="colorGreenScore">#388E3C</color>
+    <color name="colorGreenButton">#C8E6C9</color>
+
+    <!-- bank -->
+    <color name="colorPurpleLabel">#9C27B0</color>
+    <color name="colorPurpleScore">#7B1FA2</color>
+    <color name="colorPurpleButton">#E1BEE7</color>
+</resources>

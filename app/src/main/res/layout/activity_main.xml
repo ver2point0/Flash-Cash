@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/activity_main"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBoardBackground"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity">
+
+    <!-- Blue Team -->
+
+    <LinearLayout
+        android:id="@+id/blue_team_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/blue_label_margin"
+            android:layout_marginRight="@dimen/blue_label_margin"
+            android:text="@string/blue_label"
+            android:textColor="@color/colorBlueLabel"
+            android:textSize="@dimen/team_label_size"/>
+
+        <TextView
+            android:id="@+id/blue_team_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/team_initial_score"
+            android:textColor="@color/colorBlueScore"
+            android:textSize="@dimen/team_score_size"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/blue_team_buttons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/button_vertical_margin"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="@dimen/button_width"
+            android:layout_height="@dimen/button_height"
+            android:layout_marginEnd="@dimen/button_horizontal_margin"
+            android:layout_marginLeft="@dimen/button_horizontal_margin"
+            android:layout_marginRight="@dimen/button_horizontal_margin"
+            android:background="@color/colorBlueButton"
+            android:onClick="minusFiftyBlue"
+            android:text="@string/minus_50"
+            android:textColor="@color/colorButtonText"
+            android:textSize="@dimen/button_text_size"/>
+
+        <Button
+            android:layout_width="@dimen/button_width"
+            android:layout_height="@dimen/button_height"
+            android:layout_marginEnd="@dimen/button_horizontal_margin"
+            android:layout_marginLeft="@dimen/button_horizontal_margin"
+            android:layout_marginRight="@dimen/button_horizontal_margin"
+            android:background="@color/colorBlueButton"
+            android:onClick="addFiftyBlue"
+            android:text="@string/add_50"
+            android:textColor="@color/colorButtonText"
+            android:textSize="@dimen/button_text_size"/>
+
+        <Button
+            android:layout_width="@dimen/button_width"
+            android:layout_height="@dimen/button_height"
+            android:layout_marginEnd="@dimen/button_horizontal_margin"
+            android:layout_marginLeft="@dimen/button_horizontal_margin"
+            android:layout_marginRight="@dimen/button_horizontal_margin"
+            android:background="@color/colorBlueButton"
+            android:onClick="minusTwoHundredBlue"
+            android:text="@string/minus_200"
+            android:textColor="@color/colorButtonText"
+            android:textSize="@dimen/button_text_size"/>
+
+        <Button
+            android:layout_width="@dimen/button_width"
+            android:layout_height="@dimen/button_height"
+            android:layout_marginEnd="@dimen/button_horizontal_margin"
+            android:layout_marginLeft="@dimen/button_horizontal_margin"
+            android:layout_marginRight="@dimen/button_horizontal_margin"
+            android:background="@color/colorBlueButton"
+            android:onClick="addTwoHundredBlue"
+            android:text="@string/add_200"
+            android:textColor="@color/colorButtonText"
+            android:textSize="@dimen/button_text_size"/>
+
+        <Button
+            android:layout_width="@dimen/button_width"
+            android:layout_height="@dimen/button_height"
+            android:layout_marginEnd="@dimen/button_horizontal_margin"
+            android:layout_marginLeft="@dimen/button_horizontal_margin"
+            android:layout_marginRight="@dimen/button_horizontal_margin"
+            android:background="@color/colorBlueButton"
+            android:onClick="minusFiveHundredBlue"
+            android:text="@string/minus_500"
+            android:textColor="@color/colorButtonText"
+            android:textSize="@dimen/button_text_size"/>
+
+        <Button
+            android:layout_width="@dimen/button_width"
+            android:layout_height="@dimen/button_height"
+            android:layout_marginEnd="@dimen/button_horizontal_margin"
+            android:layout_marginLeft="@dimen/button_horizontal_margin"
+            android:layout_marginRight="@dimen/button_horizontal_margin"
+            android:background="@color/colorBlueButton"
+            android:onClick="addFiveHundredBlue"
+            android:text="@string/add_500"
+            android:textColor="@color/colorButtonText"
+            android:textSize="@dimen/button_text_size"/>
+    </LinearLayout>
+
+    <!-- Red Team -->
+
+    <LinearLayout
+        android:id="@+id/red_team_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/button_vertical_margin"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/red_label_margin"
+            android:layout_marginRight="@dimen/red_label_margin"
+            android:text="@string/red_label"
+            android:textColor="@color/colorRedLabel"
+            android:textSize="@dimen/team_label_size"/>
+
+        <TextView
+            android:id="@+id/red_team_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/team_initial_score"
+            android:textColor="@color/colorRedScore"
+            android:textSize="@dimen/team_score_size"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/red_team"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/button_vertical_margin"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="@dimen/button_width"
+            android:layout_height="@dimen/button_height"
+            android:layout_marginEnd="@dimen/button_horizontal_margin"
+            android:layout_marginLeft="@dimen/button_horizontal_margin"
+            android:layout_marginRight="@dimen/button_horizontal_margin"
+            android:background="@color/colorRedButton"
+            android:onClick="minusFiftyRed"
+            android:text="@string/minus_50"
+            android:textColor="@color/colorButtonText"
+            android:textSize="@dimen/button_text_size"/>
+
+        <Button
+            android:layout_width="@dimen/button_width"
+            android:layout_height="@dimen/button_height"
+            android:layout_marginEnd="@dimen/button_horizontal_margin"
+            android:layout_marginLeft="@dimen/button_horizontal_margin"
+            android:layout_marginRight="@dimen/button_horizontal_margin"
+            android:background="@color/colorRedButton"
+            android:onClick="addFiftyRed"
+            android:text="@string/add_50"
+            android:textColor="@color/colorButtonText"
+            android:textSize="@dimen/button_text_size"/>
+
+        <Button
+            android:layout_width="@dimen/button_width"
+            android:layout_height="@dimen/button_height"
+            android:layout_marginEnd="@dimen/button_horizontal_margin"
+            android:layout_marginLeft="@dimen/button_horizontal_margin"
+            android:layout_marginRight="@dimen/button_horizontal_margin"
+            android:background="@color/colorRedButton"
+            android:onClick="minusTwoHundredRed"
+            android:text="@string/minus_200"
+            android:textColor="@color/colorButtonText"
+            android:textSize="@dimen/button_text_size"/>
+
+        <Button
+            android:layout_width="@dimen/button_width"
+            android:layout_height="@dimen/button_height"
+            android:layout_marginEnd="@dimen/button_horizontal_margin"
+            android:layout_marginLeft="@dimen/button_horizontal_margin"
+            android:layout_marginRight="@dimen/button_horizontal_margin"
+            android:background="@color/colorRedButton"
+            android:onClick="addTwoHundredRed"
+            android:text="@string/add_200"
+            android:textColor="@color/colorButtonText"
+            android:textSize="@dimen/button_text_size"/>
+
+        <Button
+            android:layout_width="@dimen/button_width"
+            android:layout_height="@dimen/button_height"
+            android:layout_marginEnd="@dimen/button_horizontal_margin"
+            android:layout_marginLeft="@dimen/button_horizontal_margin"
+            android:layout_marginRight="@dimen/button_horizontal_margin"
+            android:background="@color/colorRedButton"
+            android:onClick="minusFiveHundredRed"
+            android:text="@string/minus_500"
+            android:textColor="@color/colorButtonText"
+            android:textSize="@dimen/button_text_size"/>
+
+        <Button
+            android:layout_width="@dimen/button_width"
+            android:layout_height="@dimen/button_height"
+            android:layout_marginEnd="@dimen/button_horizontal_margin"
+            android:layout_marginLeft="@dimen/button_horizontal_margin"
+            android:layout_marginRight="@dimen/button_horizontal_margin"
+            android:background="@color/colorRedButton"
+            android:onClick="addFiveHundredRed"
+            android:text="@string/add_500"
+            android:textColor="@color/colorButtonText"
+            android:textSize="@dimen/button_text_size"/>
+    </LinearLayout>
+
+    <!-- Green Team -->
+
+    <LinearLayout
+        android:id="@+id/green_team_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/button_vertical_margin"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/green_label_margin"
+            android:layout_marginRight="@dimen/green_label_margin"
+            android:text="@string/green_label"
+            android:textColor="@color/colorGreenLabel"
+            android:textSize="@dimen/team_label_size"/>
+
+        <TextView
+            android:id="@+id/green_team_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/team_initial_score"
+            android:textColor="@color/colorGreenScore"
+            android:textSize="@dimen/team_score_size"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/button_vertical_margin"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="@dimen/button_width"
+            android:layout_height="@dimen/button_height"
+            android:layout_marginEnd="@dimen/button_horizontal_margin"
+            android:layout_marginLeft="@dimen/button_horizontal_margin"
+            android:layout_marginRight="@dimen/button_horizontal_margin"
+            android:background="@color/colorGreenButton"
+            android:onClick="minusFiftyGreen"
+            android:text="@string/minus_50"
+            android:textColor="@color/colorButtonText"
+            android:textSize="@dimen/button_text_size"/>
+
+        <Button
+            android:layout_width="@dimen/button_width"
+            android:layout_height="@dimen/button_height"
+            android:layout_marginEnd="@dimen/button_horizontal_margin"
+            android:layout_marginLeft="@dimen/button_horizontal_margin"
+            android:layout_marginRight="@dimen/button_horizontal_margin"
+            android:background="@color/colorGreenButton"
+            android:onClick="addFiftyGreen"
+            android:text="@string/add_50"
+            android:textColor="@color/colorButtonText"
+            android:textSize="@dimen/button_text_size"/>
+
+        <Button
+            android:layout_width="@dimen/button_width"
+            android:layout_height="@dimen/button_height"
+            android:layout_marginEnd="@dimen/button_horizontal_margin"
+            android:layout_marginLeft="@dimen/button_horizontal_margin"
+            android:layout_marginRight="@dimen/button_horizontal_margin"
+            android:background="@color/colorGreenButton"
+            android:onClick="minusTwoHundredGreen"
+            android:text="@string/minus_200"
+            android:textColor="@color/colorButtonText"
+            android:textSize="@dimen/button_text_size"/>
+
+        <Button
+            android:layout_width="@dimen/button_width"
+            android:layout_height="@dimen/button_height"
+            android:layout_marginEnd="@dimen/button_horizontal_margin"
+            android:layout_marginLeft="@dimen/button_horizontal_margin"
+            android:layout_marginRight="@dimen/button_horizontal_margin"
+            android:background="@color/colorGreenButton"
+            android:onClick="addTwoHundredGreen"
+            android:text="@string/add_200"
+            android:textColor="@color/colorButtonText"
+            android:textSize="@dimen/button_text_size"/>
+
+        <Button
+            android:layout_width="@dimen/button_width"
+            android:layout_height="@dimen/button_height"
+            android:layout_marginEnd="@dimen/button_horizontal_margin"
+            android:layout_marginLeft="@dimen/button_horizontal_margin"
+            android:layout_marginRight="@dimen/button_horizontal_margin"
+            android:background="@color/colorGreenButton"
+            android:onClick="minusFiveHundredGreen"
+            android:text="@string/minus_500"
+            android:textColor="@color/colorButtonText"
+            android:textSize="@dimen/button_text_size"/>
+
+        <Button
+            android:layout_width="@dimen/button_width"
+            android:layout_height="@dimen/button_height"
+            android:layout_marginEnd="@dimen/button_horizontal_margin"
+            android:layout_marginLeft="@dimen/button_horizontal_margin"
+            android:layout_marginRight="@dimen/button_horizontal_margin"
+            android:background="@color/colorGreenButton"
+            android:onClick="addFiveHundredGreen"
+            android:text="@string/add_500"
+            android:textColor="@color/colorButtonText"
+            android:textSize="@dimen/button_text_size"/>
+    </LinearLayout>
+
+    <!-- Bank -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/bank_vertical_margin"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/bank_horizontal_margin"
+            android:layout_marginRight="@dimen/bank_horizontal_margin"
+            android:text="@string/bank_label"
+            android:textColor="@color/colorPurpleLabel"
+            android:textSize="@dimen/team_label_size"/>
+
+        <TextView
+            android:id="@+id/bank_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/bank_score_horizontal_margin"
+            android:layout_marginRight="@dimen/bank_score_horizontal_margin"
+            android:text="@string/bank_initial_score"
+            android:textColor="@color/colorPurpleScore"
+            android:textSize="@dimen/team_score_size"/>
+
+        <Button
+            android:layout_width="@dimen/button_width"
+            android:layout_height="@dimen/button_height"
+            android:background="@color/colorPurpleButton"
+            android:onClick="resetAllScores"
+            android:text="@string/reset_button"
+            android:textAllCaps="false"
+            android:textColor="@color/colorButtonText"
+            android:textSize="@dimen/button_text_size"/>
+    </LinearLayout>
+</LinearLayout>

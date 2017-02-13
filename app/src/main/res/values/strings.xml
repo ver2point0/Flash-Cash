@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Flash Cash</string>
+
+    <!-- team traits-->
+    <string name="team_initial_score">$2000</string>
+    <string name="minus_50">-$50</string>
+    <string name="add_50">+$50</string>
+    <string name="minus_200">-$200</string>
+    <string name="add_200">+$200</string>
+    <string name="minus_500">-$500</string>
+    <string name="add_500">+$500</string>
+
+    <!-- bank -->
+    <string name="bank_label">Bank</string>
+    <string name="bank_initial_score">$90000</string>
+    <string name="reset_button">Reset</string>
+    <string name="bank_no_money">The bank has no money available!</string>
+
+    <!-- blue team -->
+    <string name="blue_label">Blue</string>
+    <string name="blue_no_money">Blue has no money available!</string>
+
+    <!-- red team -->
+    <string name="red_label">Red</string>
+    <string name="red_no_money">Red has no money available!</string>
+
+    <!-- green team -->
+    <string name="green_label">Green</string>
+    <string name="green_no_money">Green has no money available!</string>
+
+</resources>
